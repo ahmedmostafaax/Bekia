@@ -67,7 +67,8 @@ export default function ProductDetails() {
                             <span className='m-2 ms-auto border-bottom border-width: 10px;'>It's cost <b className='text-main m-2 ms-auto border-bottom border-width: 10px;'>{product.price}</b>Points</span>
                         </div>
                     </div>
-                    <button onClick={()=> {(addProdectToCart(item._id)) , counter} } className='btn btn-success w-100 my-4'>
+                    <button onClick={()=>  {(addProdectToCart(item._id)) , (setCounter(counter + 1)) } } className='btn btn-success w-100 my-4'>
+                    {/* {(addProdectToCart(item._id)) , (setCounter(counter + 1)) }  */}
                         Add To Cart
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
