@@ -5,7 +5,6 @@ import slide2 from '../../assets/images/s2.jpg'
 import slide3 from '../../assets/images/s3.jpg'
 import recycle from '../../assets/images/Premium Vector _ Green eco friendly waste recycling technology lifestyle tiny people character.jpg'
 
-
 export default function MainSlider() {
   const sliderConfig = {
     dots: true,
@@ -49,8 +48,16 @@ export default function MainSlider() {
       </div>
 
       <div className="container my-5">
+        <div className='row py-5 video'>
+          <h2 className='text-center text-main my-2 border-bottom border-secondary'>the important of recyleing</h2>
+        <video className='w-100' controls>
+        <source src={`${process.env.PUBLIC_URL}/video.mp4`} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+        </div>
+
         <div className="row">
-          <h2 className='htext text-center border-bottom border-secondary pb-3'>who are we</h2>
+          <h2 className='htext text-center border-bottom border-secondary pb-3'>About us</h2>
           <div className="texxt my-4 shadow-sm py-3">
             <p className='text-center '>
             We are a team of environmental enthusiasts who aim to reduce waste and minimize the negative environmental impact. We believe that recycling is the key to creating a more sustainable future, and we work hard to make the world a better place by providing effective recycling solutions.
@@ -74,6 +81,7 @@ export default function MainSlider() {
           </div>
         </div>
       </div>
+
     </>
   
   );

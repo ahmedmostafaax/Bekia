@@ -15,6 +15,8 @@ import ProductDetails from "./Component/ProductDetails/ProductDetails.jsx";
 import { StoreContextProvider } from './Context/storeContext.js';
 import { ToastContainer } from 'react-toastify';
 import CreateOrder from './Component/CreateOrder/CreateOrder.jsx';
+import Shop from './Component/Shop/Shop.jsx';
+import ShopDetails from './Component/ShopDetails/ShopDetails.jsx';
 
 
 function App() {
@@ -28,7 +30,11 @@ function App() {
         { path:'/product' , element:<ProtectedRoutes> <Product/> </ProtectedRoutes>},
         { path:'/cart' , element:<ProtectedRoutes> <Cart/> </ProtectedRoutes>},
         { path:'/product-details/:id' , element:<ProtectedRoutes> <ProductDetails/> </ProtectedRoutes>},
+        { path:'/shop-details/:id' , element:<ProtectedRoutes> <ShopDetails/> </ProtectedRoutes>},
         { path:'/CreateOrder' , element:<ProtectedRoutes> <CreateOrder/> </ProtectedRoutes>},
+        { path:'/Shop' , element:<ProtectedRoutes> <Shop/> </ProtectedRoutes>},
+
+        //Shop
 
         { path:'*' , element: <NotFound/>},
       ]

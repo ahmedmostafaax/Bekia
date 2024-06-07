@@ -12,7 +12,7 @@ export default function Navbar() {
 //     ( async ()=>{
 //        let data = await getCart()
 //        console.log(data);
-//        setCounter(data.cart.cartitems)
+//        setCounter(data.cart)
 //     })()
 //    }, [])
 
@@ -37,6 +37,9 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/Product">Product</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/Shop">Shop</NavLink>
                             </li>
                         </ul>
 

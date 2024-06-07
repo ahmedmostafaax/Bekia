@@ -14,6 +14,8 @@ async function addToCart(product){
 }
 
 
+
+
 async function getCart(){
     return axios.get('https://recycling-cycm.onrender.com/api/v1/cart' , {
      headers:{
